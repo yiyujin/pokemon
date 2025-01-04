@@ -2,21 +2,25 @@
   /* line-height: 0; */
 
   /* border : 1px solid grey; */
+}
 
+body {
   background-color : #E9E9ED;
 }
 
 .Component {
   width : 300px;
+
+  background-color: white;
   
   padding : 16px;
   border-radius: 16px;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 
 }
 
 .Component * {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 }
 
 img {
