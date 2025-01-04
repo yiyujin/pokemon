@@ -1,4 +1,4 @@
-export default function Component( { name } ){
+export default function Component( { name, type, tags } ){
     return(
         <div className = "Component">
 
@@ -11,8 +11,8 @@ export default function Component( { name } ){
             <img className="type" style={{ height: "100%" }} />
 
             <div style={{ height: "100%", marginLeft: "16px", display: "flex", flexDirection: "column" }}>
-              <h3 style={{ margin: "0" }}>Type</h3>
-              <p style={{ marginTop: "auto" }}>Tags</p>
+              <h3 style={{ margin: "0" }}>{ type }</h3>
+              <p style={{ marginTop: "auto" }}>{ tags.join(", ") }</p>
             </div>
           </div>
         </div>
