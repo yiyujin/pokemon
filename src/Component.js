@@ -1,11 +1,11 @@
-export default function Component(){
+export default function Component( { name } ){
     return(
         <div className = "Component">
 
         <img/>
 
         <div style={{ paddingTop: "24px", paddingBottom: "24px" }}>
-          <h2 style={{ marginBottom: "16px" }}>Name</h2>
+          <h2 style={{ marginBottom: "16px" }}>{ name }</h2>
 
           <div style={{ display: "flex", height: "56px" }}>
             <img className="type" style={{ height: "100%" }} />

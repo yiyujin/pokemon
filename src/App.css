@@ -34,3 +34,12 @@ img {
   height : 56px;
   border-radius: 100px;
 }
+
+.grid {
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  align-self: center;
+  /* page width is 720px */
+  gap : 24px;
+}
