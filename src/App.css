@@ -1,0 +1,25 @@
+* {
+  /* line-height: 0; */
+
+  /* border : 1px solid grey; */
+}
+
+.Component {
+  width : 300px;
+}
+
+.Component * {
+  border: 1px solid grey;
+}
+
+img {
+  background-color : black;
+  width : 300px;
+  height : 300px;
+}
+
+.type {
+  width : 40px;
+  height : 40px;
+  border-radius: 100px;
+}
