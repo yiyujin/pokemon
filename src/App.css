@@ -4,12 +4,32 @@
   /* border : 1px solid grey; */
 }
 
+<<<<<<< HEAD
 .Component {
   width : 300px;
 }
 
 .Component * {
   border: 1px solid grey;
+=======
+body {
+  background-color : #E9E9ED;
+}
+
+.Component {
+  width : 300px;
+
+  background-color: white;
+  
+  padding : 16px;
+  border-radius: 16px;
+  /* border: 1px solid grey; */
+
+}
+
+.Component * {
+  /* border: 1px solid grey; */
+>>>>>>> temp
 }
 
 img {
@@ -19,7 +39,22 @@ img {
 }
 
 .type {
+<<<<<<< HEAD
   width : 40px;
   height : 40px;
   border-radius: 100px;
+=======
+  width : 56px;
+  height : 56px;
+  border-radius: 100px;
+}
+
+.grid {
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  align-self: center;
+  /* page width is 720px */
+  gap : 24px;
+>>>>>>> temp
 }
