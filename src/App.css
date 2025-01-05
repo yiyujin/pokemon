@@ -4,14 +4,13 @@
   /* border : 1px solid grey; */
 }
 
-<<<<<<< HEAD
 .Component {
   width : 300px;
 }
 
 .Component * {
-  border: 1px solid grey;
-=======
+  /* border: 1px solid grey; */
+}
 body {
   background-color : #E9E9ED;
 }
@@ -27,11 +26,6 @@ body {
 
 }
 
-.Component * {
-  /* border: 1px solid grey; */
->>>>>>> temp
-}
-
 img {
   background-color : black;
   width : 300px;
@@ -39,11 +33,9 @@ img {
 }
 
 .type {
-<<<<<<< HEAD
   width : 40px;
   height : 40px;
   border-radius: 100px;
-=======
   width : 56px;
   height : 56px;
   border-radius: 100px;
@@ -56,5 +48,4 @@ img {
   align-self: center;
   /* page width is 720px */
   gap : 24px;
->>>>>>> temp
 }
