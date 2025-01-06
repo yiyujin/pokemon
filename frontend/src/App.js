@@ -20,8 +20,6 @@ function App() {
       }
 
       const result = await response.json();
-
-      console.log(result);
       setData(result);
     } catch (error) {
       console.error("Error fetching data:", error.message);
@@ -35,9 +33,10 @@ function App() {
   return (
     <div className = "App" style = { { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%", paddingTop : "80px", paddingBottom : "80px", margin : "0 auto"} }>
       <div className = "grid">
-        <Component name = "파이리" type = "Fire" tags = {["fire", "lizard"]}/>
-        <Component name = "꼬부기" type = "Water" tags = {["grass", "poison"]}/>
-        <Component name = "피카츄" type = "Thunder" tags = {["electric"]}/>
+
+        { data.map( ( item, index ) => (
+            <Component key = { index } item = { item }/>
+        ))}
       </div>
     </div>
   );
