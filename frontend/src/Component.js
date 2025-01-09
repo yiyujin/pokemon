@@ -26,14 +26,14 @@ export default function Component( { item } ){
 
         <h2 className = "name">{ name }</h2>
 
-        <div style = { { display: "flex" } }>
+        <div className = "typeContainer">
           <div className = "typeImgContainer" style = { { backgroundColor : bg } }>
             <img className = "type" src = { thumbnail }/>
           </div>
 
           <div className = "textContainer">
-            <h3 className = "type">{ type }</h3>
-            <p className = "tag">{ tags.map( item => item.name ).join(" · ") }</p>
+            <h3>{ type }</h3>
+            <p>{ tags.map( item => item.name ).join(" · ") }</p>
           </div>
         </div>
 

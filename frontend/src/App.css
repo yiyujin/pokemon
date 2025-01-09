@@ -17,9 +17,6 @@ p {
   width : 300px;
 }
 
-.Component * {
-  /* border: 1px solid grey; */
-}
 body {
   background-color : #E9E9ED;
 }
@@ -31,8 +28,6 @@ body {
   
   padding : 16px;
   border-radius: 16px;
-  /* border: 1px solid grey; */
-
 }
 
 .imgContainer {
@@ -49,7 +44,6 @@ body {
 }
 
 img {
-  /* background-color : black; */
   width : 200px;
   height : 200px;
 }
@@ -66,10 +60,8 @@ img {
 }
 
 .type {
-  /* background-color : black; */
   width : 28px;
   height : 28px;
-  /* border-radius: 100px; */
 }
 
 .grid {
@@ -82,23 +74,22 @@ img {
 }
 
 .name {
-  margin-bottom : 40px;
-}
-
-.type {
-  margin : 0;
-}
-
-.tag {
-  margin-top : auto;
-  padding-top : 6px;
+  margin-bottom : 32px;
 }
 
 .textContainer {
-  margin-left: 16px;
-  /* display : flex;
-  flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  
+  display: flex;
+  flex-direction: column;
+  gap : 2px;
+}
+
+.textContainer > * {
+  margin : 0;
+}
+
+.typeContainer {
+  height : 56px;
+  align-items: center;
+  display: flex;
+  gap : 16px;
 }
