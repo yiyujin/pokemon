@@ -20,24 +20,23 @@ export default function Component( { item } ){
   return(
       <div className = "Component">
 
-      <div className = "imgContainer">
-        <img src = { url }/>
-      </div>
+        <div className = "imgContainer">
+          <img src = { url }/>
+        </div>
 
-      <div style = { { paddingTop: "12px", paddingBottom: "24px" } }>
-        <h2 style = { { marginBottom: "40px" } }>{ name }</h2>
+        <h2 className = "name">{ name }</h2>
 
         <div style = { { display: "flex" } }>
-          <div className = "typeContainer" style = { { backgroundColor : bg } }>
+          <div className = "typeImgContainer" style = { { backgroundColor : bg } }>
             <img className = "type" src = { thumbnail }/>
           </div>
 
-          <div style = { { height: "100%", marginLeft: "16px", display: "flex", flexDirection: "column" } }>
-            <h3 style = { { margin: "0" } }>{ type }</h3>
-            <p style = { { marginTop: "auto", paddingTop : "6px" } }>{ tags.map( item => item.name ).join(" · ") }</p>
+          <div className = "textContainer">
+            <h3 className = "type">{ type }</h3>
+            <p className = "tag">{ tags.map( item => item.name ).join(" · ") }</p>
           </div>
         </div>
-      </div>
+
     </div>
   )
 }

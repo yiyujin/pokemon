@@ -54,7 +54,7 @@ img {
   height : 200px;
 }
 
-.typeContainer {
+.typeImgContainer {
   width : 56px;
   height : 56px;
   border-radius: 100px;
@@ -79,4 +79,26 @@ img {
   align-self: center;
   /* page width is 720px */
   gap : 24px;
+}
+
+.name {
+  margin-bottom : 40px;
+}
+
+.type {
+  margin : 0;
+}
+
+.tag {
+  margin-top : auto;
+  padding-top : 6px;
+}
+
+.textContainer {
+  margin-left: 16px;
+  /* display : flex;
+  flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  
 }
