@@ -4,6 +4,17 @@ import React, { useEffect, useState } from "react";
 
 function App() {
   const [data, setData] = useState([]);
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleToggle = () => {
+    setIsChecked( (prev) => !prev );
+  };
+
+  if ( isChecked ) {
+    document.body.classList.add("show-border");
+  } else {
+    document.body.classList.remove("show-border");
+  }
 
   //GET DATA
   const fetchData = async () => {        
@@ -42,7 +53,14 @@ function App() {
             <Component key = { index } item = { item }/>
         ))}
       </div>
+
+      <label className = "switch">
+        <input type = "checkbox" checked = { isChecked } onChange = { handleToggle }/>
+        <span className = "slider"></span>
+      </label>
+
     </div>
+
   );
 }
 
