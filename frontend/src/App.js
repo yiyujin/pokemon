@@ -31,9 +31,13 @@ function App() {
   }, []);
 
   return (
-    <div className = "App" style = { { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%", paddingTop : "80px", paddingBottom : "80px", margin : "0 auto"} }>
-      <div className = "grid">
+    <div className = "page">
 
+      <h3 style = { { color : "rgba(0, 0, 0, 0.4)" } }>Pokemon : { data.length }</h3>
+
+      <br/>
+
+      <div className = "grid">
         { data.map( ( item, index ) => (
             <Component key = { index } item = { item }/>
         ))}
